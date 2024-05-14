@@ -1,0 +1,849 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  </head>
+  <body>
+    <header
+      class="fixed left-0 top-0 z-50 m-0 w-full bg-black/20 px-3 py-5 backdrop-blur-md"
+    >
+      <nav class="nav-head mx-auto flex w-[92%] items-center justify-between">
+        <div>
+          <a href="" class="logo text-[25px] font-[600] text-[#fff]"
+            >That_Fit3</a
+          >
+        </div>
+
+        <div
+          class="nav-links absolute left-0 top-0 flex min-h-fit w-full translate-y-[-100%] items-center bg-black/60 px-5 py-20 backdrop-blur-sm duration-500 md:static md:w-auto md:translate-y-0 md:bg-transparent md:px-0 md:py-0 md:backdrop-blur-none md:backdrop-filter-none"
+        >
+          <ul class="flex flex-col gap-[4vw] md:flex-row md:items-center">
+            <li class="text-white">
+              <a
+                href="#header"
+                class="text-[18px] font-bold text-[#fff] duration-[200ms]"
+                >Home</a
+              >
+            </li>
+            <li class="text-white">
+              <a
+                href="#about"
+                class="text-[18px] font-[400] text-[#fff] duration-[200ms]"
+                >About</a
+              >
+            </li>
+            <li class="text-white">
+              <a
+                href="#skill"
+                class="text-[18px] font-[400] text-[#fff] duration-[200ms]"
+                >Skills</a
+              >
+            </li>
+            <li class="text-white">
+              <a
+                href="#project"
+                class="text-[18px] font-[400] text-[#fff] duration-[200ms]"
+                >Projects</a
+              >
+            </li>
+            <li class="text-white">
+              <a
+                href="#contact"
+                class="text-[18px] font-[400] text-[#fff] duration-[200ms]"
+                >Contacts</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="flex items-center gap-6 md:hidden">
+          <ion-icon
+            onclick="onToggleMenu(this)"
+            name="menu-outline"
+            class="cursor-pointer text-3xl text-white"
+          ></ion-icon>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section
+        class="flex h-[100vh] flex-col items-center justify-center bg-gradient-to-b from-[#08153A] from-85% to-[#0B1F65]"
+        id="header"
+      >
+        <p
+          class="m-0 w-full px-10 text-center text-[7vh] text-white md:text-[12vh] lg:text-[18vh]"
+        >
+          Hi, I'm <span class="font-bold text-[#C08D2C]">Fitri</span>
+        </p>
+        <p class="text-center text-4xl text-[#C08D2C]">I'm a</p>
+
+        <div
+          class="m-[30px] w-[80%] overflow-hidden border-b-4 border-t-4 border-solid border-slate-600 py-2 md:w-[65%]"
+        >
+          <ul class="scrolling flex gap-10 whitespace-nowrap">
+            <li class="text-white">
+              <ion-icon name="radio-button-on-outline"></ion-icon>
+            </li>
+            <li class="text-white">Developer</li>
+            <li class="text-white">
+              <ion-icon name="radio-button-on-outline"></ion-icon>
+            </li>
+            <li class="text-white">Student</li>
+            <li class="text-white">
+              <ion-icon name="radio-button-on-outline"></ion-icon>
+            </li>
+            <li class="text-white">Learner</li>
+            <li class="text-white">
+              <ion-icon name="radio-button-on-outline"></ion-icon>
+            </li>
+            <li class="text-white">Inventor</li>
+            <li class="text-white">
+              <ion-icon name="radio-button-on-outline"></ion-icon>
+            </li>
+            <li class="text-white">Friend</li>
+            <li class="text-white">
+              <ion-icon name="radio-button-on-outline"></ion-icon>
+            </li>
+            <li class="text-white">Brother</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------------------------------------------------------------------------------------------------ -->
+
+      <section
+        class="m-0 mt-0 flex w-full flex-col items-center overflow-hidden bg-[#0B1F65] px-12 pb-44 pt-10 md:px-16 lg:px-32"
+        id="about"
+      >
+        <h1 class="text-6xl text-[#ffbb3d]">About me</h1>
+        <div class="mt-9 flex w-full flex-wrap gap-6">
+          <div
+            class="flex max-h-fit basis-[100%] items-center justify-center md:basis-[40%]"
+          >
+            <div
+              class="group relative flex w-[60%] overflow-hidden md:w-[100%]"
+            >
+              <img src="assets/images/me.jpg" alt="" class="w-[100%]" />
+              <div
+                class="w-20% absolute flex h-[100%] translate-x-[-100%] flex-col gap-5 bg-black/40 p-5 pt-10 duration-[500ms] group-hover:translate-x-0"
+              >
+                <a href="https://twitter.com/ThatFit08" target="_blank">
+                  <button
+                    class="group/button flex h-12 w-12 items-center justify-center rounded-full bg-black hover:bg-white"
+                  >
+                    <ion-icon
+                      name="logo-twitter"
+                      class="text-2xl text-white group-hover/button:text-black"
+                    ></ion-icon></button
+                ></a>
+                <a href="https://t.me/ThatFit3" target="_blank">
+                  <button
+                    class="group/button flex h-12 w-12 items-center justify-center rounded-full bg-black hover:bg-white"
+                  >
+                    <ion-icon
+                      name="chatbubble-outline"
+                      class="text-2xl text-white group-hover/button:text-black"
+                    ></ion-icon></button
+                ></a>
+                <a
+                  href="https://discordapp.com/users/that_fit3/"
+                  target="_blank"
+                >
+                  <button
+                    class="group/button flex h-12 w-12 items-center justify-center rounded-full bg-black hover:bg-white"
+                  >
+                    <ion-icon
+                      name="logo-discord"
+                      class="text-2xl text-white group-hover/button:text-black"
+                    ></ion-icon></button
+                ></a>
+              </div>
+              <div
+                class="absolute bottom-0 flex w-[100%] translate-y-[100%] justify-center bg-gradient-to-t from-black p-5 duration-[500ms] group-hover:translate-y-0"
+              >
+                <p class="text-md text-white">
+                  This is me!! (I am no photogenic) :>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex basis-[100%] flex-col flex-wrap px-2 pt-2 md:basis-[55%] md:px-0"
+          >
+            <p
+              class="text-[20px] text-[#ffbb3d]"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+            >
+              Name:
+              <span class="text-white">Muhammad Nurfitri bin Mohd Anuar</span>
+            </p>
+
+            <div
+              class="mt-10 flex w-[100%] flex-wrap gap-3"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-delay="50"
+            >
+              <div class="flex-[1]">
+                <p class="text-[20px] text-[#ffbb3d]">Birthday:</p>
+                <p class="text-[20px] text-white">15 October 2008</p>
+              </div>
+              <div class="flex-[2]">
+                <p class="text-[20px] text-[#ffbb3d]">Birthplace:</p>
+                <p class="text-[20px] text-white">Johor, Malaysia</p>
+              </div>
+            </div>
+
+            <p
+              class="mt-10 text-[20px] text-[#ffbb3d]"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-delay="100"
+            >
+              Education
+            </p>
+            <div
+              class="mt-3"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-delay="150"
+            >
+              <p class="text-[20px] text-white">
+                Primary: Sekolah Kebangsaan Seri Maju Jaya
+              </p>
+              <p class="text-[20px] text-white">
+                Secondary: Kolej PERMATA@Pintar Negara
+              </p>
+            </div>
+
+            <div
+              class="mt-10 hidden rounded-lg bg-white p-5 lg:flex lg:flex-col"
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
+              <p class="hidden text-[25px] text-[#ffbb3d] lg:inline">
+                A bit about me
+              </p>
+              <p class="mt-3 hidden text-[15px] text-black lg:inline">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
+                nam similique tenetur blanditiis earum velit eveniet numquam
+                sunt error quo quibusdam, ad necessitatibus. A id, ipsa
+                accusamus earum ipsam fuga? (have nothing in my to write rn)
+              </p>
+            </div>
+          </div>
+          <div
+            class="mx-0 flex w-full flex-col rounded-lg bg-white p-5 lg:hidden"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
+            <p class="text-[25px] text-[#ffbb3d]">A bit about me</p>
+            <p class="mt-3 text-[15px] text-black">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
+              nam similique tenetur blanditiis earum velit eveniet numquam sunt
+              error quo quibusdam, ad necessitatibus. A id, ipsa accusamus earum
+              ipsam fuga? (have nothing in my to write rn)
+            </p>
+          </div>
+        </div>
+
+        <!-- ------------------------------------------------------------------------------------------------------ -->
+
+        <h1 class="mt-40 text-6xl text-[#ffbb3d]">Hobby</h1>
+        <h1 class="mt-8 text-lg text-white">What do I do on my free time?</h1>
+
+        <div
+          class="mt-10 flex h-fit w-full flex-wrap justify-center gap-7 lg:gap-3"
+        >
+          <div
+            id="hobby1"
+            class="hobby-box group relative flex aspect-video w-[80%] flex-col justify-end overflow-hidden shadow-sm shadow-black hover:scale-[1.05] md:w-[45%] md:min-w-[40vh] lg:h-[40vh] lg:w-[32%]"
+          >
+            <img
+              src="assets/images/hi3rd.png"
+              alt=""
+              class="absolute z-0 h-full w-full object-cover object-[center_10%]"
+              id="gamelist"
+            />
+            <div
+              class="z-10 m-0 max-h-full w-full overflow-auto bg-black/40 p-0 backdrop-blur-sm"
+            >
+              <p class="p-3 pb-1 text-lg font-bold text-[#C08D2C]">Gaming</p>
+              <p class="p-3 pt-0 text-xs text-white">
+                I like to play games during my free time. A few of my favourite
+                games are Honkai Impact 3rd, Osu and Mobile Legends
+              </p>
+            </div>
+            <div
+              class="absolute z-20 flex h-full w-full items-center justify-center bg-[#2535D9] transition-[0.3s] group-hover:translate-y-[100%]"
+            >
+              <ion-icon
+                name="game-controller-outline"
+                class="rounded-full bg-white p-3 text-5xl shadow-2xl"
+              ></ion-icon>
+            </div>
+          </div>
+          <div
+            id="hobby2"
+            class="hobby-box group relative flex aspect-video w-[80%] flex-col justify-end overflow-hidden shadow-sm shadow-black hover:scale-[1.05] md:w-[45%] md:min-w-[40vh] lg:h-[40vh] lg:w-[32%]"
+          >
+            <img
+              src="assets/images/Mission_Yozakura_Family.jpeg"
+              alt=""
+              class="absolute z-0 h-full w-full object-cover object-[center_10%]"
+              id="readlist"
+            />
+            <div
+              class="z-10 m-0 max-h-full w-full overflow-auto bg-black/40 p-0 backdrop-blur-sm"
+            >
+              <p class="p-3 pb-1 text-lg font-bold text-[#C08D2C]">Reading</p>
+              <p class="p-3 pt-0 text-xs text-white">
+                I also interested in a few comic and light novel. Some of the
+                title that I interested in is "Mission: Yozakura Family",
+                "SSS-class revival hunter" and "The Fragrant Flower Blooms With
+                Dignity"
+              </p>
+            </div>
+
+            <div
+              class="absolute z-20 flex h-full w-full items-center justify-center bg-[#2535D9] transition-[0.3s] group-hover:translate-y-[100%]"
+            >
+              <ion-icon
+                name="book-outline"
+                class="rounded-full bg-white p-3 text-5xl shadow-2xl"
+              ></ion-icon>
+            </div>
+          </div>
+          <div
+            id="hobby3"
+            class="hobby-box group relative flex aspect-video w-[80%] flex-col justify-end overflow-hidden shadow-sm shadow-black hover:scale-[1.05] md:w-[45%] md:min-w-[40vh] lg:h-[40vh] lg:w-[32%]"
+          >
+            <img
+              src="assets/images/horimiya.jpeg"
+              alt=""
+              class="absolute z-0 h-full w-full object-cover object-[center_15%]"
+              id="animelist"
+            />
+            <div
+              class="z-10 m-0 max-h-full w-full overflow-auto bg-black/40 p-0 backdrop-blur-sm"
+            >
+              <p class="p-3 pb-1 text-lg font-bold text-[#C08D2C]">Anime</p>
+              <p class="p-3 pt-0 text-xs text-white">
+                Amongst my friend, I am the most into anime. I pretty watch it
+                on a weekly to daily basis depending how free I am. Some of my
+                favourite is "Horimiya", "Ancient Magus' Bride" and "That Time I
+                Got Reincarnated as a slime"
+              </p>
+            </div>
+            <div
+              class="absolute z-20 flex h-full w-full items-center justify-center bg-[#2535D9] transition-[0.3s] group-hover:translate-y-[100%]"
+            >
+              <ion-icon
+                name="tv-outline"
+                class="z-20 rounded-full bg-white p-3 text-5xl shadow-2xl"
+              ></ion-icon>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ------------------------------------------------------------------------------------------------------ -->
+
+      <section class="flex flex-col items-center bg-[#08153A] py-20" id="skill">
+        <h1 class="text-6xl text-white">Skills</h1>
+        <h1 class="mt-8 text-xl text-[#ffbc40]">What can I do?</h1>
+
+        <div
+          class="group mx-6 mt-10 flex flex-wrap justify-center gap-5 md:mx-10"
+        >
+          <div
+            class="group/box relative basis-[40%] cursor-pointer flex-col items-center transition-[500ms] delay-0 hover:!scale-[1.1] hover:!blur-none group-hover:scale-[0.9] group-hover:blur-sm md:basis-[30%] lg:basis-[18%]"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="0"
+          >
+            <div
+              class="z-10 flex aspect-square w-full items-center justify-center rounded-lg rounded-b-none bg-[#2535D9] p-2"
+            >
+              <img src="assets/images/html.png" class="z-10 h-[65%]" alt="" />
+            </div>
+            <div
+              class="h-fit w-full overflow-hidden border-t-4 transition-[500ms] group-hover/box:mt-2"
+            >
+              <div
+                class="translate-y-[-100%] p-2 text-white transition-[500ms] group-hover/box:translate-y-0"
+              >
+                <p class="text-md font-bold">HTML</p>
+                <p class="font-light">
+                  Standard markup language for documents designed to be
+                  displayed in a web browser
+                </p>
+                <p class="mt-3 font-[450]">Self-rating : 9/10</p>
+                <p class="mt-2 text-center">
+                  <span class="block h-[10px] w-[100%] rounded-full bg-white"
+                    ><span
+                      class="block h-[10px] w-[90%] rounded-full bg-[#C08D2C]"
+                    ></span
+                  ></span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="group/box relative basis-[40%] cursor-pointer flex-col items-center transition-[500ms] delay-0 hover:!scale-[1.1] hover:!blur-none group-hover:scale-[0.9] group-hover:blur-sm md:basis-[30%] lg:basis-[18%]"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="50"
+          >
+            <div
+              class="z-10 flex aspect-square w-full items-center justify-center rounded-lg rounded-b-none bg-[#2535D9] p-2"
+            >
+              <img
+                src="assets/images/css-n-framework.png"
+                class="z-10 h-[65%]"
+                alt=""
+              />
+            </div>
+            <div
+              class="h-fit w-full overflow-hidden border-t-4 transition-[500ms] group-hover/box:mt-2"
+            >
+              <div
+                class="translate-y-[-100%] p-2 text-white transition-[500ms] group-hover/box:translate-y-0"
+              >
+                <p class="text-md font-bold">CSS and its framework</p>
+                <p class="font-light">
+                  Used to styling a document written in a markup language such
+                  as HTML or XML
+                </p>
+                <p class="mt-3 font-[450]">Self-rating : 8/10</p>
+                <p class="mt-2 text-center">
+                  <span class="block h-[10px] w-[100%] rounded-full bg-white"
+                    ><span
+                      class="block h-[10px] w-[80%] rounded-full bg-[#C08D2C]"
+                    ></span
+                  ></span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="group/box relative basis-[40%] cursor-pointer flex-col items-center transition-[500ms] delay-0 hover:!scale-[1.1] hover:!blur-none group-hover:scale-[0.9] group-hover:blur-sm md:basis-[30%] lg:basis-[18%]"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="100"
+          >
+            <div
+              class="z-10 flex aspect-square w-full items-center justify-center rounded-lg rounded-b-none bg-[#2535D9] p-2"
+            >
+              <img
+                src="assets/images/javascript.png"
+                class="z-10 h-[65%]"
+                alt=""
+              />
+            </div>
+
+            <div
+              class="h-fit w-full overflow-hidden border-t-4 transition-[500ms] group-hover/box:mt-2"
+            >
+              <div
+                class="translate-y-[-100%] p-2 text-white transition-[500ms] group-hover/box:translate-y-0"
+              >
+                <p class="text-md font-bold">Javascript</p>
+                <p class="font-light">
+                  Versatile scripting language used to add interactivity and
+                  dynamic features to web pages
+                </p>
+                <p class="mt-3 font-[450]">Self-rating : 4/10</p>
+                <p class="mt-2 text-center">
+                  <span class="block h-[10px] w-[100%] rounded-full bg-white"
+                    ><span
+                      class="block h-[10px] w-[40%] rounded-full bg-[#C08D2C]"
+                    ></span
+                  ></span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="group/box relative basis-[40%] cursor-pointer flex-col items-center transition-[500ms] delay-0 hover:!scale-[1.1] hover:!blur-none group-hover:scale-[0.9] group-hover:blur-sm md:basis-[30%] lg:basis-[18%]"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="150"
+          >
+            <div
+              class="z-10 flex aspect-square w-full items-center justify-center rounded-lg rounded-b-none bg-[#2535D9] p-2"
+            >
+              <img src="assets/images/python.png" class="z-10 h-[55%]" alt="" />
+            </div>
+
+            <div
+              class="h-fit w-full overflow-hidden border-t-4 transition-[500ms] group-hover/box:mt-2"
+            >
+              <div
+                class="translate-y-[-100%] p-2 text-white transition-[500ms] group-hover/box:translate-y-0"
+              >
+                <p class="text-md font-bold">Python</p>
+                <p class="font-light">
+                  High-level and general-purpose programming language known for
+                  its readability and simplicity
+                </p>
+                <p class="mt-3 font-[450]">Self-rating : 7/10</p>
+                <p class="mt-2 text-center">
+                  <span class="block h-[10px] w-[100%] rounded-full bg-white"
+                    ><span
+                      class="block h-[10px] w-[70%] rounded-full bg-[#C08D2C]"
+                    ></span
+                  ></span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="group/box relative basis-[40%] cursor-pointer flex-col items-center transition-[500ms] delay-0 hover:!scale-[1.1] hover:!blur-none group-hover:scale-[0.9] group-hover:blur-sm md:basis-[30%] lg:basis-[18%]"
+            data-aos="fade-up"
+            data-aos-duration="800"
+            data-aos-delay="200"
+          >
+            <div
+              class="z-10 flex aspect-square w-full items-center justify-center rounded-lg rounded-b-none bg-[#2535D9] p-2"
+            >
+              <img
+                src="assets/images/android_studio.png"
+                class="z-10 h-[60%]"
+                alt=""
+              />
+            </div>
+
+            <div
+              class="h-fit w-full overflow-hidden border-t-4 transition-[500ms] group-hover/box:mt-2"
+            >
+              <div
+                class="translate-y-[-100%] p-2 text-white transition-[500ms] group-hover/box:translate-y-0"
+              >
+                <p class="text-md font-bold">Andoid Studio/Java</p>
+                <p class="font-light">
+                  official IDE for Android app development, providing tools
+                  necssary for the app development
+                </p>
+                <p class="mt-3 font-[450]">Self-rating : 8/10</p>
+                <p class="mt-2 text-center">
+                  <span class="block h-[10px] w-[100%] rounded-full bg-white"
+                    ><span
+                      class="block h-[10px] w-[80%] rounded-full bg-[#C08D2C]"
+                    ></span
+                  ></span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ------------------------------------------------------------------------------------------------------ -->
+
+      <section
+        class="flex h-fit flex-col items-center justify-center bg-[#0B1F65] py-20"
+        id="project"
+      >
+        <h1 class="text-6xl text-white">Projects & Achievement</h1>
+        <h1 class="mt-8 text-xl text-[#ffbc40]">
+          Here are my work and achievement over the years of my study
+        </h1>
+
+        <div class="slider relative mt-16 h-[100vh] w-[80%]">
+          <div class="list">
+            <div
+              class="item active absolute inset-0 overflow-hidden rounded-md opacity-0"
+            >
+              <img
+                src="assets/images/escape-the-cave.png"
+                alt=""
+                class="h-full w-full object-cover object-left"
+              />
+              <div
+                class="desc2 absolute left-[10%] top-[20%] z-[1] w-[500px] max-w-[60%] bg-black/20 p-10 opacity-0 backdrop-blur-sm"
+              >
+                <p class="my-3 text-4xl text-[#C08D2C]">Escape the cave</p>
+                <h2 class="text-md text-white">Scratch game</h2>
+                <p class="text-white">
+                  The first project I've done. About a bat that want to escape
+                  the cave. A relatively simple game.
+                </p>
+                <a
+                  href="https://scratch.mit.edu/projects/607467563/"
+                  target="_blank"
+                  ><button
+                    class="mt-5 rounded-md bg-[#0B1F65] p-3 text-[#b18739]"
+                  >
+                    The project
+                  </button></a
+                >
+              </div>
+            </div>
+            <div
+              class="item absolute inset-0 overflow-hidden rounded-md opacity-0"
+            >
+              <img
+                src="assets/images/pixelpet.png"
+                alt=""
+                class="h-full w-full object-cover"
+              />
+              <div
+                class="desc2 absolute left-[10%] top-[20%] z-[1] w-[500px] max-w-[60%] bg-black/20 p-10 opacity-0 backdrop-blur-sm"
+              >
+                <p class="my-3 text-4xl text-[#C08D2C]">Pixelpet</p>
+                <h2 class="text-md text-white">Raspberry pi</h2>
+                <p class="text-white">
+                  A game that me and my group make using Raspberry pi and sensor
+                  HAT. It is a game where you control a slie to eat food and
+                  avoid poison.
+                </p>
+                <a href="https://trinket.io/python/d89f02ad69" target="_blank"
+                  ><button
+                    class="mt-5 inline rounded-md bg-[#0B1F65] p-3 text-[#b18739]"
+                  >
+                    The project
+                  </button></a
+                >
+              </div>
+            </div>
+            <div
+              class="item absolute inset-0 overflow-hidden rounded-md opacity-0"
+            >
+              <img
+                src="assets/images/Meowsure.png"
+                alt=""
+                class="h-full w-full object-cover"
+              />
+              <div
+                class="desc2 absolute left-[10%] top-[20%] z-[1] w-[500px] max-w-[60%] bg-black/20 p-10 opacity-0 backdrop-blur-sm"
+              >
+                <p class="my-3 text-4xl text-[#C08D2C]">Meowsure</p>
+                <h2 class="text-md text-white">Raspberry pi and Mobile app</h2>
+                <p class="text-white">
+                  A project using Raspberry pi and ultrasonic sensor. It will
+                  keep track of the food intake of your pet by monitoring the
+                  food container level.
+                </p>
+                <a
+                  href="https://www.canva.com/design/DAF6PnacQfg/5loyhp57cC3QrnwnxcVTxQ/view?utm_content=DAF6PnacQfg&utm_campaign=designshare&utm_medium=link&utm_source=editor"
+                  target="_blank"
+                  ><button
+                    class="mt-5 inline rounded-md bg-[#0B1F65] p-3 text-[#b18739]"
+                  >
+                    More info
+                  </button></a
+                >
+                <a href="https://trinket.io/python/b4a3b73a04" target="_blank"
+                  ><button
+                    class="mt-5 inline rounded-md bg-[#0B1F65] p-3 text-[#b18739]"
+                  >
+                    Python
+                  </button></a
+                >
+                <a
+                  href="https://drive.google.com/drive/folders/1SkR74aN9OwJVWBIrmlAf26iQ_1rtuOrM"
+                  target="_blank"
+                  ><button
+                    class="mt-5 inline rounded-md bg-[#0B1F65] p-3 text-[#b18739]"
+                  >
+                    Java (app)
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="absolute right-[10%] top-[20%] z-[40] hidden gap-1 md:flex"
+          >
+            <button
+              class="flex h-[45px] w-[45px] items-center justify-center rounded-xl bg-[#eee] text-xl font-bold opacity-[.5] hover:bg-black hover:text-white hover:opacity-80"
+              id="prev"
+            >
+              <ion-icon name="arrow-back-outline"></ion-icon>
+            </button>
+            <button
+              class="flex h-[45px] w-[45px] items-center justify-center rounded-xl bg-[#eee] text-xl font-bold opacity-[.5] hover:bg-black hover:text-white hover:opacity-80"
+              id="next"
+            >
+              <ion-icon name="arrow-forward-outline"></ion-icon>
+            </button>
+          </div>
+
+          <div
+            class="tumbnail absolute bottom-[2vh] z-[11] flex h-fit w-full gap-2 overflow-auto px-[5%]"
+          >
+            <div
+              class="item active aspect-video h-[25vh] shrink-0 cursor-pointer p-[3px] brightness-50 transition-[0.5s]"
+            >
+              <img
+                src="assets/images/escape-the-cave.png"
+                alt=""
+                class="h-full w-full rounded-md object-cover"
+              />
+              <div
+                class="title absolute bottom-[10px] left-[10px] right-[10px] top-auto text-white"
+              >
+                Escape the cave
+              </div>
+            </div>
+            <div
+              class="item aspect-video h-[25vh] shrink-0 cursor-pointer p-[3px] brightness-50 transition-[0.5s]"
+            >
+              <img
+                src="assets/images/pixelpet.png"
+                alt=""
+                class="h-full w-full rounded-md object-cover"
+              />
+              <div
+                class="title absolute bottom-[10px] left-[10px] right-[10px] top-auto text-black"
+              >
+                Pixelpet
+              </div>
+            </div>
+            <div
+              class="item aspect-video h-[25vh] shrink-0 cursor-pointer p-[3px] brightness-50 transition-[0.5s]"
+            >
+              <img
+                src="assets/images/Meowsure.png"
+                alt=""
+                class="h-full w-full rounded-md object-cover"
+              />
+              <div
+                class="title absolute bottom-[10px] left-[10px] right-[10px] top-auto text-black"
+              >
+                Meowsure
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ------------------------------------------------------------------------------------------------------ -->
+
+      <section
+        class="flex h-[100vh] w-full flex-col items-center justify-center bg-[#08153A]"
+        id="contact"
+      >
+        <div class="m-0 flex w-[80%] flex-col gap-12 md:flex-row">
+          <div
+            class="flex basis-[100%] flex-col items-center justify-center gap-5 md:basis-[20%]"
+          >
+            <p
+              class="w-full text-center text-4xl text-[#C08D2C] md:text-start md:text-5xl lg:text-7xl"
+            >
+              Have some question?
+            </p>
+            <p
+              class="w-full text-center text-xl text-white md:text-start md:text-2xl lg:text-4xl"
+            >
+              Ask it here
+            </p>
+          </div>
+          <div
+            class="flex basis-[100%] flex-col rounded-xl bg-white p-8 md:basis-[78%]"
+          >
+            <form action="">
+              <input
+                type="text"
+                placeholder="Your name"
+                class="my-4 w-full border-b-2 border-[#e4e7eb] p-3 outline-none transition-[2s] focus:border-[#2535D9] focus:bg-gray-50"
+              />
+              <input
+                type="text"
+                placeholder="E-mail"
+                class="my-4 w-full border-b-2 border-[#e4e7eb] p-3 outline-none transition-[2s] focus:border-[#2535D9] focus:bg-gray-50"
+              />
+              <textarea
+                placeholder="Message"
+                id=""
+                class="my-4 w-full border-b-2 border-[#e4e7eb] p-3 outline-none transition-[2s] focus:border-[#2535D9] focus:bg-gray-50"
+                cols="30"
+                rows="5"
+              ></textarea>
+            </form>
+            <div class="flex justify-between">
+              <button
+                class="group relative flex w-[20%] items-center justify-center overflow-hidden whitespace-nowrap rounded-lg bg-[#2535D9] p-2 text-white hover:bg-[#0B1F65]"
+              >
+                <p
+                  class="relative left-[8%] transition-[500ms] group-hover:left-[-200%]"
+                >
+                  Send
+                </p>
+                <ion-icon
+                  name="send-outline"
+                  class="relative right-[-200%] transition-[500ms] group-hover:right-[17%]"
+                ></ion-icon>
+              </button>
+              <div class="flex h-full justify-center gap-3">
+                <a href="https://twitter.com/ThatFit08" target="_blank">
+                  <button
+                    class="group/button flex h-10 w-10 items-center justify-center rounded-full border-2 border-black bg-black hover:bg-white"
+                  >
+                    <ion-icon
+                      name="logo-twitter"
+                      class="text-xl text-white group-hover/button:text-black"
+                    ></ion-icon></button
+                ></a>
+                <a href="https://t.me/ThatFit3" target="_blank">
+                  <button
+                    class="group/button flex h-10 w-10 items-center justify-center rounded-full border-2 border-black bg-black hover:bg-white"
+                  >
+                    <ion-icon
+                      name="chatbubble-outline"
+                      class="text-xl text-white group-hover/button:text-black"
+                    ></ion-icon></button
+                ></a>
+                <a
+                  href="https://discordapp.com/users/that_fit3/"
+                  target="_blank"
+                >
+                  <button
+                    class="group/button flex h-10 w-10 items-center justify-center rounded-full border-2 border-black bg-black hover:bg-white"
+                  >
+                    <ion-icon
+                      name="logo-discord"
+                      class="text-xl text-white group-hover/button:text-black"
+                    ></ion-icon></button
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="flex items-center justify-center bg-black p-5">
+      <p class="ext-center text-white">
+        Copyright &copy; That_Fit3 . All right reserved
+      </p>
+    </footer>
+  </body>
+</html>

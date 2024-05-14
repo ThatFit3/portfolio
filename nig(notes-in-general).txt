@@ -1,0 +1,24 @@
+pallete:
+1. #08153A
+2. #0B1F65
+3. #2535D9
+4. #C08D2C
+
+skills:
+- html
+- css (and the framework)
+- javascript
+
+- python
+- kotlin (android studio)
+
+project:
+
+KPP:
+- scratch games:
+    - escape the cave
+    - simple machine
+- meowsure (python)
+- meowsure (app)
+- pixelpet (games)
+

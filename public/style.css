@@ -1,0 +1,53 @@
+.scrolling {
+  animation: scroll 25s infinite linear;
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes showContent {
+  to {
+    transform: translateY(0);
+    filter: blur(0);
+    opacity: 1;
+  }
+}
+
+.list .item.active .desc2 {
+  transform: translateY(30px);
+  filter: blur(20px);
+  opacity: 0;
+  animation: showContent 0.5s ease-in-out forwards;
+}
+
+.slider .list .item.active {
+  opacity: 1;
+  z-index: 10;
+}
+
+.slider .list .item::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(to top, #0b1f65 20%, #00000000 70%);
+}
+
+.tumbnail::-webkit-scrollbar {
+  width: 0;
+}
+
+.tumbnail .item.active {
+  filter: brightness(1.5);
+  border: 3px solid #c08d2c;
+  border-radius: 6px;
+}
