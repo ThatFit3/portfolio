@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
 
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montenegrin+Gothic+One&display=swap" rel="stylesheet">
+
 
     <!-- module of icon package -->
     <script
@@ -23,53 +28,70 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
-    <section class="h-[60vh] text-black bg-[#1591DC] flex justify-end items-end border-[#C4E2F5] border-[100px] border-b-0" id="home">
-      
+    <section class="h-[60vh] bg-[#1591DC] border-[#C4E2F5] border-[100px] border-b-0 flex flex-col justify-end p-7 text-[#C4E2F5] " id="home">
+      <div class="h-[30%] flex items-center">
+        <h1 class="montenegrin text-[clamp(5rem,10vw,16rem)] leading-none">
+          Hi
+        </h1>
+      </div>
+      <div class="h-[40%]">
+        <h2 class="montenegrin text-[clamp(4rem,10vw,12rem)] leading-none">
+          Im Fitri
+        </h2>
+      </div>
+      <hr class="h-[2px] bg-[#C4E2F5] w-[100%]">
+      <div class="h-[10%] pt-3">
+        <h2 class="text-[clamp(2rem,1.5vw,5rem)] leading-none">
+          Want to know more about me?
+        </h2>
+      </div>
     </section>
     
-    <nav class="nav-head sticky top-0 mx-auto flex w-[100%] px-[120px] items-center justify-between h-[5vh] bg-[#C4E2F5]" id="navbar">
+    <nav class="nav-head sticky top-0 mx-auto flex w-[100%] px-[120px] items-center justify-between h-[5vh] bg-[#C4E2F5] text-[#2C5EAD]" id="navbar">
 
       <div
-        class="nav-links left-0 top-2 flex min-h-fit w-full translate-y-[-100%] items-center bg-black/60 px-5 py-20 backdrop-blur-sm duration-500 md:static md:w-auto md:translate-y-0 md:bg-transparent md:px-0 md:py-0 md:backdrop-blur-none md:backdrop-filter-none"
+        class="nav-links left-0 top-2 flex min-h-fit w-full translate-y-[-100%] items-center px-5 py-20 backdrop-blur-sm duration-500 md:static md:w-auto md:translate-y-0 md:bg-transparent md:px-0 md:py-0 md:backdrop-blur-none md:backdrop-filter-none text-ellipsis"
       >
       
-        <ul class="flex flex-col gap-[4vw] md:flex-row md:items-center">
-          <li class="text-white">
+        <p class="font-bold"><</p>
+        <ul class="flex flex-col gap-[4vw] md:flex-row md:items-center mx-10">
+          <li>
             <a
               href="#home"
-              class="text-[18px] font-bold text-[#fff] duration-[200ms]"
+              class="text-[18px] font-bold duration-[200ms]"
               >Home</a
             >
           </li>
-          <li class="text-white">
+          <li>
             <a
               href="#about"
-              class="text-[18px] font-[400] text-[#fff] duration-[200ms]"
+              class="text-[18px] font-[400] duration-[200ms]"
               >About</a
             >
           </li>
-          <li class="text-white">
+          <li
             <a
               href="#skill"
-              class="text-[18px] font-[400] text-[#fff] duration-[200ms]"
+              class="text-[18px] font-[400] duration-[200ms]"
               >Skills</a
             >
           </li>
-          <li class="text-white">
+          <li>
             <a
               href="#project"
-              class="text-[18px] font-[400] text-[#fff] duration-[200ms]"
+              class="text-[18px] font-[400] duration-[200ms]"
               >Projects</a
             >
           </li>
-          <li class="text-white">
+          <li>
             <a
               href="#contact"
-              class="text-[18px] font-[400] text-[#fff] duration-[200ms]"
+              class="text-[18px] font-[400] duration-[200ms]"
               >Contacts</a
             >
           </li>
         </ul>
+        <p class="font-bold">></p>
       </div>
 
       <div class="flex items-center gap-6 md:hidden">

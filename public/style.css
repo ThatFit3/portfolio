@@ -1,8 +1,15 @@
 .nav-scrolled {
-    background: rgba(196, 226, 245, 0.75);
+    font: white !important ;
+
+    background: rgba(255, 255, 255, 0);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-
     /* Optional */
     /* box-shadow: 0 4px 20px rgba(0,0,0,.08); */
+}
+
+.montenegrin {
+  font-family: "Montenegrin Gothic One", serif;
+  font-weight: 400;
+  font-style: normal;
 }
