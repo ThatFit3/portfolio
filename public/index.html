@@ -15,39 +15,41 @@
 
 
     <!-- module of icon package -->
-    <script
+    <!-- <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
     ></script>
     <script
       nomodule
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
+    ></script> -->
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
-    <section class="h-[60vh] bg-[#1591DC] border-[#C4E2F5] border-[100px] border-b-0 flex flex-col justify-end p-7 text-[#C4E2F5] " id="home">
+    <section class="h-[70vh] bg-[#1591DC] border-[#C4E2F5] border-[5vw] border-b-0 flex flex-col justify-end p-7 text-[#C4E2F5] " id="home">
       <div class="h-[30%] flex items-center">
-        <h1 class="montenegrin text-[clamp(5rem,10vw,16rem)] leading-none">
-          Hi
+        <h1 class="hi montenegrin text-[clamp(5rem,10vw,16rem)] leading-none">
+          Hi,
         </h1>
       </div>
-      <div class="h-[40%]">
-        <h2 class="montenegrin text-[clamp(4rem,10vw,12rem)] leading-none">
+      <div class="h-[50%] flex justify-between items-end">
+        <h2 class="hi montenegrin text-[clamp(4rem,10vw,12rem)] leading-none">
           Im Fitri
         </h2>
       </div>
       <hr class="h-[2px] bg-[#C4E2F5] w-[100%]">
       <div class="h-[10%] pt-3">
-        <h2 class="text-[clamp(2rem,1.5vw,5rem)] leading-none">
+        <h2 class="hi leading-none">
           Want to know more about me?
         </h2>
       </div>
+
+      
     </section>
     
-    <nav class="nav-head sticky top-0 mx-auto flex w-[100%] px-[120px] items-center justify-between h-[5vh] bg-[#C4E2F5] text-[#2C5EAD]" id="navbar">
+    <nav class="md:hidden lg:flex nav-head sticky top-0 mx-auto hidden w-[100%] px-[120px] items-center justify-between h-[5vh] bg-[#C4E2F5] text-[#2C5EAD]" id="navbar">
 
       <div
         class="nav-links left-0 top-2 flex min-h-fit w-full translate-y-[-100%] items-center px-5 py-20 backdrop-blur-sm duration-500 md:static md:w-auto md:translate-y-0 md:bg-transparent md:px-0 md:py-0 md:backdrop-blur-none md:backdrop-filter-none text-ellipsis"
@@ -97,19 +99,23 @@
       <div class="flex items-center gap-6 md:hidden">
         <ion-icon
           onclick="onToggleMenu(this)"
-          name="menu-outline"
-          class="cursor-pointer text-3xl text-white"
+          name="menu"
+          class="cursor-pointer text-3xl text-black"
         ></ion-icon>
       </div>
     </nav>
 
-    <section class="h-[35vh] text-black bg-[#1591DC] flex justify-end items-end border-[#C4E2F5] border-[100px] border-t-0" id="home">
-      
+    <section class="h-[25vh] text-[#C4E2F5] bg-[#1591DC] flex flex-col justify-center items-center border-[#C4E2F5] border-[5vw] border-t-0" id="home">
+      <p class="m-2">or just scoll :></p>
+      <ion-icon name="arrow-dropdown" class="text-[#C4E2F5]"></ion-icon>
     </section>
 
     <section
-        class="m-0 mt-0 flex w-full flex-col items-center overflow-hidden bg-[#0B1F65] px-12 pb-44 pt-10 md:px-16 lg:px-32 h-[100vh]"
+        class="m-0 mt-0 flex w-full flex-col items-center overflow-hidden bg-[#1591DC] px-12 pb-44 pt-10 md:px-16 lg:px-32 h-[100vh]"
         id="about"
       ></section>
+
+
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
   </body>
 </html>
